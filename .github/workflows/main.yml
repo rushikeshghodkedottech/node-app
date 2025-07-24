@@ -32,7 +32,7 @@ jobs:
       - name: Push to Docker Hub
         run: |
           docker push my-app:${{ github.sha }}
-        if: github.ref = 'refs/heads/main'
+        if: github.ref == 'refs/heads/main'
         
 
 
