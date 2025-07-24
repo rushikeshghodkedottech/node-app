@@ -31,7 +31,7 @@ jobs:
 
       - name: Push to Docker Hub
         run: |
-          docker push my-app:${{ github.sha }}
+          docker push node-app:${{ github.sha }}
         if: github.ref == 'refs/heads/main'
         
 
