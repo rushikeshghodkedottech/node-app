@@ -27,11 +27,11 @@ jobs:
       
       - name: Build Image
         run: |
-          docker build -t node-app:${{ github.sha }} .
+          docker build -t rushikeshghodkedottech/node-app:${{ github.sha }} .
 
       - name: Push to Docker Hub
         run: |
-          docker push node-app:${{ github.sha }}
+          docker push rushikeshghodkedottech/node-app:${{ github.sha }}
         if: github.ref == 'refs/heads/main'
         
 
